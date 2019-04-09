@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Bridge Finance</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header__top">
+			<div class="left">
+				<p>Bridge Finance</p>
+			</div>
+			<div class="right">
+				<div class="phone">
+					<a href="#"><img src="img/phone.svg" alt=""></a>
+					<a href="tel:8002000600" class="phone_number">8 (800) 200 06 00</a>
+				</div>	
+				<a href="#"><img src="img/telegram.svg" alt="" class="telegram"></a>
+				<a href="#"><img src="img/whatsup.svg" alt="" class="whatsup"></a>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-5 offset-md-1">
+						<h1>Рефинансирование кредитов</h1>
+						<div class="header__main_title" id="#menu">
+							<h2>Под залог недвижимости. Снизим ежемесячный платеж и поможем избежать просрочек.</h2>
+							<a href="#calc" class="btn order-btn">Оставить заявку</a>
+							<a href="#calc" class="btn payment-btn">Расчет кредита</a>
+						</div>
+					</div>
+					<div class="col-md-5 d-flex justify-content-end align-items-center">
+						<div class="header__main_circle">
+							<p>От 9%</p>
+						</div>
+					</div> 	
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END		 -->
+
+	<!-- CALC -->
+	<section class="calc" id="calc">
+
+		<div class="calc__left">
+			<div class="calc__left-container">
+				<h1>Калькулятор рефинансирования</h1>
+				<div class="calc__top">
+
+					<div class="calc__top_item">
+						<h2>Ваш ежемесячный платеж по всем кредитам (включая займы, кредитные карты и микрозаймы)</h2>
+						<div class="range-slider">
+							<input class="calc-input" type="text" maxlength="8" placeholder="10 000" value="" id="calc-input" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');">
+							<input class="calc-range" type="text" id="calc-range">
+						</div>
+					</div>
+
+					<div class="calc__top_item-second">
+						<h2>Общая сумма займа (включая займы, кредитные карты и микрозаймы)</h2>
+						<div class="range-slider-second">
+							<input class="calc-input-second" type="text" maxlength="8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');" placeholder="1 000 000" id="calc-input-second">
+							<input class="calc-range-second" type="text" id="calc-range-second">
+						</div>
+					</div>
+
+				</div>	
+				<div class="calc__main">
+					<h2>Вид залога</h2>
+						<div class="btn-group btn-group-toggle calc__main_container" data-toggle="buttons">
+							<label class="btn btn-secondary active">
+								<input type="radio" name="options" id="option1" autocomplete="off" checked> <span>Квартира</span>
+							</label>
+							<label class="btn btn-secondary">
+								<input type="radio" name="options" id="option2" autocomplete="off"> <span>Офис</span>
+							</label>
+							<label class="btn btn-secondary">
+								<input type="radio" name="options" id="option3" autocomplete="off"> <span>Дом</span>
+							</label>
+							<label class="btn btn-secondary btn-secondary-last">
+								<input type="radio" name="options" id="option4" autocomplete="off"> <span>Коммерческая недвижимость</span>
+							</label>
+						</div>
+				</div>
+				<div class="calc__bottom d-flex">
+					<div class="calc__bottom-item">
+						<h2>Примерная стоимость залога</h2>
+						<input class="calc-input-bottom" type="text" maxlength="15" placeholder="000000" value="" id="calc-input-bottom" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');">
+					</div>
+					<div class="calc__bottom-item calc__bottom-item-second">
+						<h2>Вам полных лет</h2>
+						<input class="calc-input-bottom" type="text" maxlength="2" placeholder="25" value="" id="calc-input-bottom" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="calc__right">
+			<div class="calc__right-container">
+				<h1>Ваш ежемесячный платеж составит:</h1>
+				<div class="calc__right-top">
+					<span class="calc__right-top-title">Ежемесячный платеж</span>
+					<span class="calc__right-top-num"></span>
+				</div>
+				<div class="calc__right-bottom">
+					<h1>Оставить заявку</h1>
+					<div class="note"></div>
+					<form class="calc__form" novalidate>
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Bridge Finance">
+						<input type="hidden" name="admin_email" value="zayavkibridge@yandex.ru">
+						<input type="hidden" name="form_subject" value="Заявка с сайта Bridge Finance">
+						<!-- END Hidden Required Fields -->
+
+						<input type="text" name="Имя:" value="" class="input form-control" placeholder="Григорий" required>
+						<input type="text" name="Телефон:" value="" class="input form-control" placeholder="Телефон" required>
+						<button class="main-btn button">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+
+	</section>
+	<!-- CALC END	 -->
+
+	<!-- FEATURES -->
+	<section class="features">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-4">
+					<div class="features__item">
+						<img src="img/shield.svg" alt="">
+						<p>8 лет на рынке</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="features__item">
+						<img src="img/smile.svg" alt="">
+						<p>150 счастливых клиентов</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="features__item">
+						<img src="img/zoom.svg" alt="">
+						<p>Абсолютная прозрачность сделок</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FEATURES END -->
+
+	<!-- DOCS -->
+	<section class="docs">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="docs__title">
+					<h1>Основные документы для ознакомления</h1>
+				</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="docs__item">
+						<img src="img/doc-1.png" alt="">
+						<a href="img/GRUL BF.pdf" class="btn docs-btn" download>Скачать</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="docs__item">
+						<img src="img/doc-2.png" alt="">
+						<a href="img/IFNS BF.pdf" class="btn docs-btn" download>Скачать</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="docs__item">
+						<img src="img/doc-3.png" alt="">
+						<a href="img/Dogovor Kredit.docx" class="btn docs-btn" download>Скачать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- DOCS END -->
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer">
+			<div class="footer__container d-flex justify-content-center">
+				<div class="footer__items">
+					<div class="footer__item">
+						<img src="img/phone-footer.svg" alt="">
+						<a href="tel:8002000600">8 (800) 200 06 00</a>
+					</div>
+					<div class="footer__item footer__item-second">
+						<img src="img/mark.svg" alt="">
+						<p>Кутузовский проспект 88</p>
+					</div>
+				</div>
+			</div>
+			<div class="polit">
+						<a href="https://docs.google.com/document/d/1fUyRiwsJOeurEaEnBGitOqxgyDC6Tuxa3omJ8HEulgk/edit?usp=sharing" class="footer__politic" target="_blank">Политика Конфиденциальности</a>
+					</div>	
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+</html>

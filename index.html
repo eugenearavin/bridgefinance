@@ -90,7 +90,7 @@
 					<div class="calc__top_item-second">
 						<h2>Общая сумма займа (включая займы, кредитные карты и микрозаймы)</h2>
 						<div class="range-slider-second">
-							<input class="calc-input-second" type="text" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');" placeholder="1 000 000" id="calc-input-second">
+							<input class="calc-input-second" type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');" placeholder="1 000 000" id="calc-input-second">
 							<input class="calc-range-second" type="text" id="calc-range-second">
 						</div>
 					</div>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="calc__bottom-item calc__bottom-item-second">
 						<h2>Вам полных лет</h2>
-						<input class="calc-input-bottom" type="text" maxlength="2" placeholder="25" value="" id="calc-input-bottom" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');">
+						<input class="calc-input-bottom calc-input-bottom-age" type="text" maxlength="2" placeholder="25" value="" id="calc-input-bottom" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');">
 					</div>
 				</div>
 			</div>
